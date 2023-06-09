@@ -1,0 +1,147 @@
+body{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    flex:2;
+    background-image: url("left bg.jpg");
+    background-size: cover;
+}
+
+label{
+    color: white;
+    text-align: left;
+}
+
+.mainInputs>*{
+    width: 200px;
+}
+
+.right{
+    display: flex;
+    flex:5;
+    background-image: url("right bg.jpg");
+    background-size: cover;
+}
+
+.input-side{
+    width: 60%;
+    margin-inline: 20%;
+    margin-top: 8%;
+    height: 700px;
+    overflow-y:inherit;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#fifowac{
+    margin: 40px auto 40px;
+    width: 150px;
+}
+
+#addBtn,#undoBtn{
+    width: 100px;
+}
+
+#resetBtn{
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+
+.table-side{
+    padding-left: 20px;
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+.table-side{
+    width: 98%;
+}
+
+h1{
+    color:azure;
+    text-align: center;
+    padding: 4px;
+}
+
+th,td{
+    border: 1px solid black;
+    text-align-last: center;
+    vertical-align: middle;
+}
+
+h5{
+    color:dimgrey;
+}
+
+.date{
+    width: 100px;
+}
+
+
+/*for switch*/
+#switch{
+    display: none;
+}
+
+#switchLbl{
+    width: 100px;
+    height: 40px;
+    background-color:lightseagreen;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #477a8550;
+    display: block;
+}        
+
+#switchLbl::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color:aliceblue;
+    position: absolute;
+    border-radius:70px;
+    top: 5px;
+    left: 5px;
+    transition: 0.5s;
+}
+
+#switch:checked + #switchLbl:after{
+    left:calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+#switchLbl:active:after{
+    width: 115px;
+}
+
+#switch:checked + #switchLbl{
+    background-color:cornflowerblue;
+}
+
+#toggle{
+    display: table-row;
+}
+
+.switchText{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    color: azure;
+    font-size: 25px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rad1{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
